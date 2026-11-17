@@ -845,3 +845,40 @@ html[data-theme="dark"] .detail-body .tech-stack-note {
   background:linear-gradient(115deg,#083967,#075caa);
   border:1px solid #1d9ef0;color:#f5faff;
 }
+
+/* Hero alignment consistency — light and dark themes */
+
+@media (max-width: 700px) {
+  .hero {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px 24px;
+  }
+
+  .hero h1,
+  .hero #hero-title {
+    margin: 0 0 14px;
+    font-size: clamp(22px, 5.4vw, 28px);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    text-align: left;
+  }
+
+  .hero-copy {
+    margin: 0;
+    padding-left: 12px;
+  }
+
+  .hero-copy p {
+    margin: 0 0 14px;
+    line-height: 1.55;
+  }
+
+  .hero-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .hero .statement {
+    margin-top: 20px;
+  }
+}
