@@ -882,3 +882,180 @@ html[data-theme="dark"] .detail-body .tech-stack-note {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 700px) {
+  .hero #hero-title {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+}
+
+/* Consistent mobile margins across all sections */
+@media (max-width: 700px) {
+
+  .content > section {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    width: auto !important;
+    box-sizing: border-box;
+  }
+
+  /* Keep the About Me background and portrait inside the margins */
+  .about-visual {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Keep project cards and other content within the sections */
+  .service-grid,
+  .workflow-list,
+  .project-list,
+  .contact-form {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* About Me — mobile alignment correction */
+@media (max-width: 700px) {
+
+  .content > section.about {
+    margin-left: 16px !important;
+    margin-right: 0 !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .about-visual {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-description {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+}
+
+/* HOW I WORK — MOBILE ALIGNMENT & TYPOGRAPHY */
+
+@media (max-width: 700px) {
+
+  .content > section.workflow {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important;
+    box-sizing: border-box;
+  }
+
+  .workflow h2 {
+    font-size: 26px !important;
+    line-height: 1.2;
+    margin: 0 0 18px !important;
+  }
+
+  .workflow-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .workflow-list details {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+  }
+
+  .workflow-list summary {
+    display: grid !important;
+    grid-template-columns: 24px minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: start;
+    padding: 0 !important;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .workflow-list summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .workflow-list summary > span {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 22px !important;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .workflow-list summary > b {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 19px !important;
+    line-height: 1.2;
+  }
+
+  .workflow-list summary > small {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 13px !important;
+    line-height: 1.5;
+  }
+
+  .workflow-list details > p,
+  .workflow-list details > ul {
+    margin: 12px 0 8px 36px !important;
+    font-size: 14px !important;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 700px) {
+
+  /* Workflow descriptions */
+  .workflow-list summary > small {
+    line-height: 1 !important;
+    opacity: 0.5 !important;
+  }
+
+  /* Expanded workflow content */
+  .workflow-list details > p,
+  .workflow-list details > ul,
+  .workflow-list details > ul li {
+    line-height: 1 !important;
+    opacity: 0.5;
+  }
+
+}
+@media (max-width: 700px) {
+  .workflow-list details > p,
+  .workflow-list details > ul {
+    opacity: 1 !important;
+  }
+
+  .workflow-list details > p {
+    color: rgba(100, 110, 130, 0.5);
+  }
+
+  .workflow-list details > p b,
+  .workflow-list details > p strong {
+    color: #111827 !important;
+    opacity: 1 !important;
+  }
+}
+
+
+/* Temporarily disable all project Explore buttons */
+
+.project-expand {
+  pointer-events: none !important;
+  cursor: default !important;
+}

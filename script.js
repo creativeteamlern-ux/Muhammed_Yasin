@@ -314,3 +314,18 @@ ${data.get('message')}`
 
   syncFavicon();
 })();
+
+
+
+/* Temporarily disable project exploration */
+
+document.querySelectorAll('.project-expand').forEach(button => {
+  button.disabled = true;
+  button.setAttribute('aria-disabled', 'true');
+});
+
+document.querySelectorAll('.projects .project-card > img').forEach(img => {
+  img.style.pointerEvents = 'none';
+  img.removeAttribute('role');
+  img.removeAttribute('tabindex');
+});
