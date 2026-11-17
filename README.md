@@ -1,0 +1,1 @@
+Complete website. Project image fitting fixed for TalkBot, FurniCore and Smart CRM in light and dark modes. Open index.html; all assets included.\n
